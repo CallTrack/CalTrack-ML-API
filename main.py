@@ -10,7 +10,7 @@ from flask import Flask, request, jsonify, make_response
 import tensorflow as tf
 import os
 
-labels = ["rendang", "ayam dada", "ayam paha", "bakso", "burger","dendeng", "gado-gado", "kebab", "kentang", "makaroni", "nugget","roti", "sosis", "takoyaki"]
+labels = ["rendang", "ayam dada", "ayam paha", "bakso", "burger", "gado-gado", "kebab", "kentang", "makaroni","roti", "sosis", "takoyaki"]
 
 def get_db():
     conn = psycopg.connect(
@@ -38,7 +38,7 @@ def predict_image(IMG_PATH):
     classes = model.predict(images, batch_size=10)
 
     results = classes.flatten()
-
+    # return results
     for (label, result) in zip(labels, results):
         if (result == 1):
             return label
