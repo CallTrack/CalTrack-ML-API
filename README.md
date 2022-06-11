@@ -23,28 +23,28 @@ Several tools you need to install:
 - Postman: https://www.postman.com/
 - Python3: https://www.python.org/downloads/
 
-1. Make new project folder, change the directory to the new folder and then git clone this repository
+1. Make new project folder, change the directory to the new folder and then git clone this repository.
    ```bash
    git clone https://github.com/CallTrack/CalTrack-ML-API.git
    ```
-2. Open your IDE (VSCode or Pycharm) and then open the folder that contains this repository
+2. Open your IDE (VSCode or Pycharm) and then open the folder that contains this repository.
 3. Create virtual environment with this command :
    ```bash
    python -m venv
    ```
-4. Install all requirements that are needed (you can see in the requirements.txt file)
+4. Install all requirements that are needed (you can see in the requirements.txt file).
 5. Run the main.py files with this command :
      ```bash
      python main.py
      ```
-   or if you are using pycharm, just run it by simply clicking the run button on top-right of the IDE
-6. To create database and tables for test this API, you can just simply take a look at this doc : https://github.com/CallTrack/CalTrack-API-Express/edit/master/README.md
+   or if you are using pycharm, just run it by simply clicking the run button on top-right of the IDE.
+6. To create database and tables for test this API, you can just simply take a look at this doc : https://github.com/CallTrack/CalTrack-API-Express/edit/master/README.md.
 7. Test the API routes using postman. for upload image in the postman, you have to change the body to form-data and upload any images that you want.
 
 ### Run in the Cloud
-1. Create new project in GCP
-2. Open Cloud Shell
-3. Git clone the repository
+1. Create new project in GCP.
+2. Open Cloud Shell.
+3. Git clone this repository.
    ```bash
    git clone https://github.com/CallTrack/CalTrack-ML-API.git
    ```
@@ -56,12 +56,12 @@ Several tools you need to install:
    ```bash
    gcloud builds submit --tag gcr.io/$GOOGLE_CLOUD_PROJECT/any-name-with-lowercase
    ```
-6. Wait and make sure the container is created, if you want to check it just simply heading to 'container registry' in GCP
-7. Find Cloud Run service by searching it
-8. Click 'Create New Service'
-9. Fill all option based on your needed
-10. Upload image container
-11. On the connection part choose your CloudSQL service name
-12. Click 'deploy'
-13. Wait and there will be an URL created for you
-14. Test the API using postman
+6. Wait and make sure the container is created, if you want to check it just heading to 'container registry' in GCP.
+7. Find Cloud Run service by searching it.
+8. Click 'Create New Service'.
+9. Fill all option based on your needed.
+10. Upload image container.
+11. On the connection part choose your CloudSQL service name.
+12. Click 'deploy'.
+13. Wait and there will be an URL created for you.
+14. Test the API using postman.
