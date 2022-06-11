@@ -37,7 +37,7 @@ Several tools you need to install:
      ```bash
      python main.py
      ```
-  or if you are using pycharm, just run it by simply clicking the run button on top-right of the IDE
+   or if you are using pycharm, just run it by simply clicking the run button on top-right of the IDE
 6. To create database and tables for test this API, you can just simply take a look at this doc : https://github.com/CallTrack/CalTrack-API-Express/edit/master/README.md
 7. Test the API routes using postman. for upload image in the postman, you have to change the body to form-data and upload any images that you want.
 
